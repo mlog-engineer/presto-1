@@ -113,7 +113,7 @@ final class PrestoSystemRequirements
                     "    -Dpresto-temporarily-allow-java8=true\n");
         }
 
-        if ((version.getMajor() == 8 && version.getUpdate().isPresent() && version.getUpdate().getAsInt() >= 161) ||
+        if ((version.getMajor() == 8 && version.getUpdate().isPresent() && version.getUpdate().getAsInt() >= 121) ||
                 (version.getMajor() > 8 && version.getMajor() < 11)) {
             warnRequirement("Future versions of Presto will require Java 11+ (found: %s)", javaVersion);
             return;
